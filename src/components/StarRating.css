@@ -1,0 +1,38 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-rating.readonly {
+  gap: 5px;
+}
+
+.star {
+  font-size: 16px;
+  color: #D8DEDA;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.star.filled {
+  color: var(--amber);
+}
+
+.interactive .star {
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.interactive .star:hover {
+  transform: scale(1.15);
+}
+
+.star-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--charcoal);
+}

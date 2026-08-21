@@ -1,0 +1,20 @@
+.location-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.location-chip {
+  background: var(--leaf-light);
+  color: var(--forest);
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.location-chip:hover {
+  border-color: var(--leaf);
+}

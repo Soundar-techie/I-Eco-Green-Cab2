@@ -1,0 +1,95 @@
+// EV fleet data. Kept separate from components so this can be swapped
+// for an API response later without touching any UI code.
+//
+// Specs are the manufacturer's published figures (ARAI/company claims)
+// as of this data being written. Real-world range varies with driving
+// conditions, so treat these as indicative, not guaranteed.
+
+const evCars = [
+  {
+    id: 'tata-tiago-ev',
+    name: 'Tata Tiago EV',
+    image: '/assets/cars/tiago-ev.png',
+    seats: 5,
+    battery: '24 kWh / 19.2 kWh (variant)',
+    range: 'Up to 315 km (claimed)',
+    charging: 'DC fast charge 0-80% in ~57 min, home AC charger supported',
+    fare: 50,
+    rating: 4.3,
+    tagline: 'Compact and efficient - ideal for short city trips.',
+  },
+  {
+    id: 'tata-punch-ev',
+    name: 'Tata Punch EV',
+    image: '/assets/cars/punch-ev.png',
+    seats: 5,
+    battery: '35 kWh',
+    range: 'Up to 421 km (claimed)',
+    charging: 'DC fast charge 0-80% in ~56 min, home AC charger supported',
+    fare: 50,
+    rating: 4.4,
+    tagline: 'A compact SUV with a raised stance and solid range.',
+  },
+  {
+    id: 'tata-nexon-ev',
+    name: 'Tata Nexon EV',
+    image: '/assets/cars/nexon-ev.png',
+    seats: 5,
+    battery: '40.5 kWh (long range variant)',
+    range: 'Up to 489 km (claimed)',
+    charging: 'DC fast charge 0-80% in ~56 min, home AC charger supported',
+    fare: 50,
+    rating: 4.5,
+    tagline: 'Our most popular SUV - spacious and comfortable for families.',
+  },
+  {
+    id: 'mg-astor-ev',
+    name: 'MG Comet EV',
+    image: '/assets/cars/mg-astor-ev.png',
+    seats: 4,
+    battery: '17.3 kWh',
+    range: 'Up to 230 km (claimed)',
+    charging: 'AC home charging, 0-100% in ~7 hours',
+    fare: 50,
+    rating: 4.1,
+    tagline: 'A nimble city car, easy to park and quick through traffic.',
+  },
+  {
+    id: 'mg-windsor-ev',
+    name: 'MG Windsor EV',
+    image: '/assets/cars/windsor-ev.png',
+    seats: 5,
+    battery: '38 kWh',
+    range: 'Up to 331 km (claimed)',
+    charging: 'DC fast charge available, home AC charger supported',
+    fare: 50,
+    rating: 4.4,
+    tagline: 'A roomy crossover with a relaxed, lounge-like cabin.',
+  },
+  {
+    id: 'mahindra-xuv400-ev',
+    name: 'Mahindra XUV400 EV',
+    image: '/assets/cars/xuv400-ev.png',
+    seats: 5,
+    battery: '39.4 kWh (long range variant)',
+    range: 'Up to 456 km (claimed)',
+    charging: 'DC fast charge 0-80% in ~50 min, home AC charger supported',
+    fare: 50,
+    rating: 4.3,
+    tagline: 'Strong performance and a long range for outstation trips.',
+  },
+  {
+    id: 'byd-atto-3',
+    name: 'BYD Atto 3',
+    image: '/assets/cars/atto3-ev.png',
+    seats: 5,
+    battery: '60.48 kWh',
+    range: 'Up to 521 km (claimed)',
+    charging: 'DC fast charge 0-80% in ~50 min, home AC charger supported',
+    fare: 50,
+    rating: 4.6,
+    tagline: 'Premium ride quality with the longest range in our fleet.',
+  },
+];
+
+export default evCars;

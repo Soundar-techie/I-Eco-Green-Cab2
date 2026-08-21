@@ -1,0 +1,26 @@
+.profile-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  padding: 32px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.profile-saved-note {
+  background: var(--leaf-light);
+  color: var(--forest);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}

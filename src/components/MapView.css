@@ -1,0 +1,11 @@
+.map-view {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.map-container {
+  height: 320px;
+  width: 100%;
+}

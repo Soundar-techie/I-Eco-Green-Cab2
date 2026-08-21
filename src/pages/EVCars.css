@@ -1,0 +1,39 @@
+.ev-search {
+  max-width: 380px;
+  margin: 0 auto 36px;
+}
+
+.ev-search input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  font-size: 15px;
+}
+
+.ev-search input:focus {
+  outline: none;
+  border-color: var(--leaf);
+}
+
+/* EV Cars page header styling */
+.ev-cars-header {
+  background: linear-gradient(135deg, #143A2C 0%, #4CA771 100%);
+  padding: 64px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.ev-cars-header h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.ev-cars-header p {
+  max-width: 520px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
