@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import evCars from '../data/evCars';
+import locations from '../data/locations';
 import LocationSearch from '../components/LocationSearch';
 import MapView from '../components/MapView';
 import { storage, generateId } from '../utils/storage';
@@ -18,9 +19,14 @@ export default function BookCab() {
   const navigate = useNavigate();
 
   const preselectedCarId = location.state?.carId || '';
+  const preselectedPickup = location.state?.pickup || '';
+  const preselectedDest = location.state?.destination || '';
 
-  const [pickup, setPickup] = useState({ name: '', lat: null, lng: null });
-  const [destination, setDestination] = useState({ name: '', lat: null, lng: null });
+  const initialPickupLoc = locations.find((l) => l.name === preselectedPickup) || { name: preselectedPickup, lat: null, lng: null };
+  const initialDestLoc = locations.find((l) => l.name === preselectedDest) || { name: preselectedDest, lat: null, lng: null };
+
+  const [pickup, setPickup] = useState(initialPickupLoc);
+  const [destination, setDestination] = useState(initialDestLoc);
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [carId, setCarId] = useState(preselectedCarId);
